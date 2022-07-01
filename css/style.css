@@ -1,0 +1,40 @@
+:root{
+  --default-section-padding: 0.5rem 5% 5% ;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+  padding: var(--default-section-padding);
+}
+
+/* section > nav */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* section > nav > navContent */
+.navContent{
+  flex-basis: 60%;
+}
+
+/* section > nav > navContent > navList */
+.navList{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/* section > nav > navContent > navList > navListItem */
+.navListItem{
+  list-style: none;
+}
+

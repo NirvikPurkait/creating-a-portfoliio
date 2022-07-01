@@ -1,0 +1,129 @@
+/* typical break points are
+768px, 992px, 1200px */
+
+/* colors used in the css
+
+#F0F8FF; #1E90FF; #ADD8E6; #84888c; #545759; #00ffff; #8a2be2; #ffffff; #ff0000; #004cff; #4267B2; #fed373; #f15245; #d92e7f; #9b36b7; #515ecf; #1DA1F2; #25D366; #0077b5; #333333
+
+*/
+/* When a new class or id added, add the path in comment */
+
+/* applies upto the limit  */
+/* max-width have to be ordered from largest to smallest to work properly */
+/* __________________________________________________________________________________________________ */
+@media screen and (max-width: 768px) {
+
+  /* section > nav > navContent > navList */
+  .navList {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: none;
+  }
+    
+
+
+
+  /* header > navSection > hamburger */
+  .hamburger{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 9;
+    overflow: hidden;
+  }
+
+  /* header > navSection > hamburger > lines1,line2,line3 */
+  .line1, .line2, .line3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1c0404;
+    width: 30px;
+    height: 4px;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+  }
+  
+  /* header > navSection > hamburger > lines1 */
+  .line1{
+    top: 37%;
+  }
+
+  /* header > navSection > hamburger > lines3 */
+  .line3{
+    top: 64%;
+  }
+  
+  /* header > navSection > hamburger cross > lines3 */
+  .cross .line1{
+    transform: rotate(45deg);
+    width: 50px;
+    top: 47.5%;
+    left: 9%;
+    background-color: #ff0000;
+  }
+
+  /* header > navSection > hamburger cross > lines2 */
+  .cross .line2{
+    left: 500%;
+  }
+  
+  /* header > navSection > hamburger cross > lines3 */
+  .cross .line3{
+    transform: rotate(135deg);
+    width: 50px;
+    top: 47.5%;
+    left: 9%;
+    background-color: #ff0000;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* applies exceeding the limits */
+/* min-width have to be ordered from smallest to largest to work properly */
+/* __________________________________________________________________________________________________ */
+@media screen and (min-width: 768px){
+
+  /* section > nav > navContent > navList > navListItem > about */
+  .work, .galary, .contact{
+    margin-right: 70px;
+  }
+
+  /* section > nav > navContent > navList > navListItem > about */
+  .about {
+    flex-basis: 50%;
+    text-align: end;
+    margin-left: 70px;
+  }
+
+  /* nav > hamburger */
+  .hamburger{
+    display: none;
+  }
+}
