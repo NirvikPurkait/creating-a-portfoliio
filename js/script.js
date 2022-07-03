@@ -2,58 +2,64 @@
 
 function changingNavSection() {
   
-  let toChange = document.getElementsByClassName('navList');
+  let toChange = document.getElementsByClassName('navList')[0];
   // gets the navlist for small screen
 
-  let toCross = document.getElementsByClassName('hamburger');
+  let toCross = document.getElementsByClassName('hamburger')[0];
   // gets the hamburger button
 
   // conditional statement of whether to display the navbar or not
-  if (toChange[0].style.display == 'flex') {
-    toChange[0].style.display = 'none'
+  if (toChange.style.display == 'flex') {
+    toChange.style.display = 'none'
   }
   else {
-    toChange[0].style.display = 'flex'
+    toChange.style.display = 'flex'
   }
-  toCross[0].classList.toggle('cross');
+  toCross.classList.toggle('cross');
 
 }
 
 
 // this function to show dropdowns
+
+let aboutDropdown = document.getElementsByClassName('aboutDropdown')[0];
+let workDropdown = document.getElementsByClassName('workDropdown')[0];
+let galaryDropdown = document.getElementsByClassName('galaryDropdown')[0];
+
+
 function showAboutDropdown() {
 
-  let aboutDropdown = document.getElementsByClassName('aboutDropdown');
-
-  if (aboutDropdown[0].style.display == 'block') {
-    aboutDropdown[0].style.display = 'none';
+  if (aboutDropdown.style.display == 'block') {
+    aboutDropdown.style.display = 'none';
   }
   else {
-    aboutDropdown[0].style.display = 'block';
+    aboutDropdown.style.display = 'block';
+    workDropdown.style.display = 'none';
+    galaryDropdown.style.display = 'none';
   }
 
 }
 
 function showWorkDropdown() {
 
-  let workDropdown = document.getElementsByClassName('workDropdown');
-
-  if (workDropdown[0].style.display == 'block') {
-    workDropdown[0].style.display = 'none';
+  if (workDropdown.style.display == 'block') {
+    workDropdown.style.display = 'none';
   }
   else {
-    workDropdown[0].style.display = 'block';
+    workDropdown.style.display = 'block';
+    aboutDropdown.style.display = 'none';
+    galaryDropdown.style.display = 'none';
   }
 
 }function showGalaryDropdown() {
 
-  let galaryDropdown = document.getElementsByClassName('galaryDropdown');
-
-  if (galaryDropdown[0].style.display == 'block') {
-    galaryDropdown[0].style.display = 'none';
+  if (galaryDropdown.style.display == 'block') {
+    galaryDropdown.style.display = 'none';
   }
   else {
-    galaryDropdown[0].style.display = 'block';
+    galaryDropdown.style.display = 'block';
+    aboutDropdown.style.display = 'none';
+    workDropdown.style.display = 'none';
   }
 
 }

@@ -38,12 +38,6 @@ nav{
   list-style: none;
 }
 
-/* section > nav > navContent > navList > navListItem > work,galary,about */
-.work, .galary, .about{
-  margin-right: 70px;
-  padding: 0 10px;
-}
-
 /* section > nav > navContent > navList > navListItem > work,galary,about > dropdown */
 .aboutDropdown, .workDropdown, .galaryDropdown{
   position: absolute;
@@ -57,16 +51,7 @@ nav{
   list-style: none;
 }
 
-/* section > nav > navContent > navList > navListItem > contact */
-.contact {
-  flex-basis: 50%;
-  text-align: end;
-  margin-left: 70px;
+/* section > heading */
+.heading{
+  margin-top: 5%;
 }
-
-/* nav > hamburger */
-.hamburger{
-  display: none;
-}
-
-/*  */

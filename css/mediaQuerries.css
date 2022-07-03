@@ -109,6 +109,22 @@
 /* min-width have to be ordered from smallest to largest to work properly */
 /* __________________________________________________________________________________________________ */
 @media screen and (min-width: 768px){
+  /* section > nav > navContent > navList > navListItem > work,galary,about */
+  .work, .galary, .about{
+    margin-right: 70px;
+    padding: 0 10px;
+  }
 
+  /* section > nav > navContent > navList > navListItem > contact */
+  .contact {
+    flex-basis: 50%;
+    text-align: end;
+    margin-left: 70px;
+  }
+
+  /* nav > hamburger */
+  .hamburger{
+    display: none;
+  }
 
 }
