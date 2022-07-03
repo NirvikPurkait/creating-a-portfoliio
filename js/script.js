@@ -18,3 +18,42 @@ function changingNavSection() {
   toCross[0].classList.toggle('cross');
 
 }
+
+
+// this function to show dropdowns
+function showAboutDropdown() {
+
+  let aboutDropdown = document.getElementsByClassName('aboutDropdown');
+
+  if (aboutDropdown[0].style.display == 'block') {
+    aboutDropdown[0].style.display = 'none';
+  }
+  else {
+    aboutDropdown[0].style.display = 'block';
+  }
+
+}
+
+function showWorkDropdown() {
+
+  let workDropdown = document.getElementsByClassName('workDropdown');
+
+  if (workDropdown[0].style.display == 'block') {
+    workDropdown[0].style.display = 'none';
+  }
+  else {
+    workDropdown[0].style.display = 'block';
+  }
+
+}function showGalaryDropdown() {
+
+  let galaryDropdown = document.getElementsByClassName('galaryDropdown');
+
+  if (galaryDropdown[0].style.display == 'block') {
+    galaryDropdown[0].style.display = 'none';
+  }
+  else {
+    galaryDropdown[0].style.display = 'block';
+  }
+
+}

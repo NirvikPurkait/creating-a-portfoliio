@@ -38,3 +38,35 @@ nav{
   list-style: none;
 }
 
+/* section > nav > navContent > navList > navListItem > work,galary,about */
+.work, .galary, .about{
+  margin-right: 70px;
+  padding: 0 10px;
+}
+
+/* section > nav > navContent > navList > navListItem > work,galary,about > dropdown */
+.aboutDropdown, .workDropdown, .galaryDropdown{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+/* section > nav > navContent > navList > navListItem > work,galary,about > dropdown > dropdownlist */
+.dropdownItem{
+  list-style: none;
+}
+
+/* section > nav > navContent > navList > navListItem > contact */
+.contact {
+  flex-basis: 50%;
+  text-align: end;
+  margin-left: 70px;
+}
+
+/* nav > hamburger */
+.hamburger{
+  display: none;
+}
+
+/*  */

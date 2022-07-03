@@ -110,20 +110,5 @@
 /* __________________________________________________________________________________________________ */
 @media screen and (min-width: 768px){
 
-  /* section > nav > navContent > navList > navListItem > about */
-  .work, .galary, .contact{
-    margin-right: 70px;
-  }
 
-  /* section > nav > navContent > navList > navListItem > about */
-  .about {
-    flex-basis: 50%;
-    text-align: end;
-    margin-left: 70px;
-  }
-
-  /* nav > hamburger */
-  .hamburger{
-    display: none;
-  }
 }
